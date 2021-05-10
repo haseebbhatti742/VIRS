@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--    <item>-->
+<!--        <layer-list android:opacity="transparent">-->
+<!--            <item android:width="100dp" android:gravity="right" android:end="20dp">-->
+<!--                <bitmap  android:src="@drawable/ic_down_spinner_24" android:gravity="right"/>-->
+<!--            </item>-->
+<!--        </layer-list>-->
+<!--    </item>-->
+<!--</selector>-->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- Drop Shadow Stack -->
+<item>
+    <shape>
+        <padding android:top="1dp" android:right="1dp" android:bottom="1dp" android:left="1dp" />
+        <solid android:color="#02000000" />
+        <corners android:radius="25dp" />
+    </shape>
+</item>
+<item>
+    <shape>
+        <padding android:top="1dp" android:right="1dp" android:bottom="1dp" android:left="1dp" />
+        <solid android:color="#05000000" />
+        <corners android:radius="25dp" />
+    </shape>
+</item>
+<item>
+    <shape>
+        <padding android:top="1dp" android:right="1dp" android:bottom="1dp" android:left="1dp" />
+        <solid android:color="#10000000" />
+        <corners android:radius="25dp" />
+    </shape>
+</item>
+<item>
+    <shape>
+        <padding android:top="1dp" android:right="1dp" android:bottom="1dp" android:left="1dp" />
+        <solid android:color="#15000000" />
+        <corners android:radius="25dp" />
+    </shape>
+</item>
+<item>
+    <shape>
+        <padding android:top="1dp" android:right="1dp" android:bottom="1dp" android:left="1dp" />
+        <solid android:color="#20000000" />
+        <corners android:radius="25dp" />
+    </shape>
+</item>
+<item>
+    <shape>
+        <padding android:top="1dp" android:right="1dp" android:bottom="1dp" android:left="1dp" />
+        <solid android:color="#25000000" />
+        <corners android:radius="25dp" />
+    </shape>
+</item>
+<item>
+    <shape>
+        <padding android:top="1dp" android:right="1dp" android:bottom="1dp" android:left="1dp" />
+        <solid android:color="#30000000" />
+        <corners android:radius="25dp" />
+    </shape>
+</item>
+
+<!-- Background -->
+<item>
+    <shape>
+        <solid android:color="#ffffff" />
+        <corners android:radius="25dp" />
+    </shape>
+</item>
+
+    <item>
+        <layer-list android:opacity="transparent">
+            <item android:width="100dp" android:gravity="right" android:end="20dp">
+                <bitmap  android:src="@drawable/ic_down_spinner_24" android:gravity="right"/>
+            </item>
+        </layer-list>
+    </item>
+</layer-list>

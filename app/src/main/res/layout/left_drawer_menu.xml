@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3C3C3C"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/navHeader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.75"
+        android:background="@color/colorBgBlue"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+        android:paddingBottom="20dp">
+
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_profile_picture" />
+
+        <TextView
+            android:id="@+id/textViewDrawerUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Usama Chota"
+            android:textColor="@color/colorBgOrange"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:background="@drawable/homescreen1"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/textViewDrawerHome"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_home_white_24"
+            android:drawablePadding="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:text="Home"
+            android:textColor="@color/colorBgOrange"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBgBlue" />
+
+        <TextView
+            android:id="@+id/textViewDrawerReportIncident"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_report_incident"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Report Incident"
+            android:textColor="@color/colorBgOrange"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBgBlue" />
+
+        <TextView
+            android:id="@+id/textViewDrawerViewReportedIncidents"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_view_reported_incidents"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="View Reported Incidents"
+            android:textColor="@color/colorBgOrange"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBgBlue" />
+
+        <TextView
+            android:id="@+id/textViewDrawerGetHelpServiceLocation"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_get_help_service_location"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Get Help Service location"
+            android:textColor="@color/colorBgOrange"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBgBlue" />
+
+        <TextView
+            android:id="@+id/textViewDrawerLogout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_logout_white_24"
+            android:drawablePadding="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:text="Logout"
+            android:textColor="@color/colorBgOrange"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBgBlue" />
+    </LinearLayout>
+
+</LinearLayout>

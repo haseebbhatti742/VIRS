@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivNavMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="12dp"
+                android:src="@drawable/ic_menu" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.12"
+        android:background="@drawable/homescreen1"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.86"
+            android:gravity="left|center_vertical"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Current Location"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.52">
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapHome"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.87"
+            android:gravity="top|center_vertical"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/textViewHomeAddress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="10dp"
+                android:textColor="@color/colorBgOrange"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.85">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="-10dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_weight="0.7"
+                android:elevation="1dp">
+
+                <ImageView
+                    android:id="@+id/imageViewHomeReportIncident"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_report_incident" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="-45dp"
+                android:layout_marginLeft="-45dp"
+                android:layout_weight="0.2"
+                android:paddingTop="13dp"
+                android:paddingRight="50dp"
+                android:paddingBottom="17dp">
+
+                <Button
+                    android:id="@+id/buttonHomeReportIncident"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_btn_blue"
+                    android:text="Report Incident" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.85">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="-10dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_weight="0.7"
+                android:elevation="1dp">
+
+                <ImageView
+                    android:id="@+id/imageViewHomeViewReportedIncidents"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_view_reported_incidents" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="-45dp"
+                android:layout_marginLeft="-45dp"
+                android:layout_weight="0.2"
+                android:paddingTop="13dp"
+                android:paddingRight="50dp"
+                android:paddingBottom="17dp">
+
+                <Button
+                    android:id="@+id/buttonHomeViewReportedIncidents"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_btn_blue"
+                    android:text="View Reported Incidents" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.85">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="-10dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_weight="0.7"
+                android:elevation="1dp">
+
+                <ImageView
+                    android:id="@+id/imageViewHomeHelpServiceInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_report_incident" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="-45dp"
+                android:layout_marginLeft="-45dp"
+                android:layout_weight="0.2"
+                android:paddingTop="13dp"
+                android:paddingRight="50dp"
+                android:paddingBottom="17dp">
+
+                <Button
+                    android:id="@+id/buttonHomeHelpServiceInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_btn_blue"
+                    android:text="Help Service Information" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9">
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

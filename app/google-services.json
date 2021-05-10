@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "762704704728",
+    "project_id": "virs-7bd1d",
+    "storage_bucket": "virs-7bd1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762704704728:android:5a9eaa4145279de74bd3ad",
+        "android_client_info": {
+          "package_name": "virs.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762704704728-m8v1q4mgag929pgutpb42q6vq2k12k8g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "virs.app",
+            "certificate_hash": "f2425441f4b44f4cd3898dfdaf81bd074acabc7e"
+          }
+        },
+        {
+          "client_id": "762704704728-eigtfg8001i1t37rjrchtop5tsh1jc79.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAX2fuTkuJlEJKd92OsKmTq07GvSHRZDv0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "762704704728-eigtfg8001i1t37rjrchtop5tsh1jc79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

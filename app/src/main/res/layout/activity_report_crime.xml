@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReportCrimeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewReportCrimeGoBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="12dp"
+                android:src="@drawable/ic_arrow_back_white_24" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.12"
+        android:background="@drawable/homescreen1"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.88"
+            android:gravity="left|center_vertical"
+            android:paddingTop="25dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crime Reporting"
+                android:textColor="@color/gray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutReportCrimeLocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+
+            <TextView
+                android:id="@+id/textViewReportCrimeLocationLabel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:drawableLeft="@drawable/ic_location"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="Location:"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textViewReportCrimeLocation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center_vertical"
+                android:text="Lahore"
+                android:textColor="@color/colorBgOrange" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.93"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:id="@+id/textViewReportCrimeDateLabel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:drawableLeft="@drawable/ic_date"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="Date:"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textViewReportCrimeDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center_vertical"
+                android:text="12/12/2020"
+                android:textColor="@color/colorBgOrange" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.93"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:id="@+id/textViewReportCrimeTimeLabel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:drawableLeft="@drawable/ic_time"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="Time:"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textViewReportCrimeTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center_vertical"
+                android:text="9:21 PM"
+                android:textColor="@color/colorBgOrange" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutCrimeType"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.88"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp">
+
+
+            <Spinner
+                android:id="@+id/spinnerReportCrimeType"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_spinner"
+                android:paddingLeft="20dp"
+                android:popupBackground="@drawable/bg_incident_card"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutReportCrimeDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.83"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="5dp">
+
+
+            <EditText
+                android:id="@+id/editTextReportCrimeDetails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_incident_card"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Provide Extra Crime Details"
+                android:inputType="textMultiLine"
+                android:paddingLeft="23dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCrimePhotoButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="-10dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="-10dp"
+                android:layout_weight="0.7"
+                android:elevation="1dp">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/ic_camera" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="-80dp"
+                android:layout_marginLeft="-80dp"
+                android:layout_weight="0.3">
+
+                <Button
+                    android:id="@+id/buttonReportCrimeTakePhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/bg_btn_blue"
+                    android:text="Take Photo" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.83"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
+
+                <ImageView
+                    android:id="@+id/imageViewReportCrimePhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/linearLayoutCrimeOkButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:gravity="right|center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingTop="15dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15dp">
+
+
+                <ImageView
+                    android:id="@+id/imageViewReportCrimeOK"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="TODO"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/ic_check_mark" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.95">
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

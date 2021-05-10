@@ -1,0 +1,7 @@
+<resources>
+    <string name="google_api">AIzaSyCaS6mfcsGApLEEY13N0VYkIuQXZWyYp0c</string>
+    <string name="app_name">VIRS</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+</resources>
